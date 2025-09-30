@@ -6,8 +6,7 @@ It forwards requests to an origin server, caches responses locally, and serves c
 
 It also supports a simple CLI interface:
 
-caching-proxy --port <number> --origin <url>
-caching-proxy --clear-cache
+<pre> ``` caching-proxy --port &lt;number&gt; --origin &lt;url&gt; caching-proxy --clear-cache ``` </pre>
 
 ## Features
 
@@ -19,21 +18,13 @@ caching-proxy --clear-cache
 
 ## Project Structure
 
-.
-├── bin/
-│   └── caching-proxy        # CLI entry point
-├── cache-handler.js         # Cache management
-├── server.js                # Express proxy server
-├── data/
-│   └── cached-requests.json # Cache storage
-├── package.json
-└── README.md
+<pre> ``` . ├── bin/ │ └── caching-proxy # CLI entry point ├── cache-handler.js # Cache management ├── server.js # Express proxy server ├── data/ │ └── cached-requests.json # Cache storage ├── package.json └── README.md ``` </pre>
 
 ## Installation
 
 Clone the repository and install dependencies:
 
-git clone https://github.com/<your-username>/caching-proxy.git
+git clone https://github.com/kakup07/caching-proxy.git
 cd caching-proxy
 npm install
 
