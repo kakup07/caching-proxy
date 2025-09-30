@@ -6,7 +6,8 @@ It forwards requests to an origin server, caches responses locally, and serves c
 
 It also supports a simple CLI interface:
 
-<pre> ``` caching-proxy --port &lt;number&gt; --origin &lt;url&gt; caching-proxy --clear-cache ``` </pre>
+<pre> ``` caching-proxy --port &lt;number&gt; --origin &lt;url&gt; ``` </pre>
+<pre> ``` caching-proxy --clear-cache ``` </pre>
 
 ## Features
 
@@ -15,10 +16,6 @@ It also supports a simple CLI interface:
 - Adds X-Cache: HIT or X-Cache: MISS headers for easy cache tracking.
 - Supports CLI arguments for custom port and origin URL.
 - Supports cache clearing via CLI.
-
-## Project Structure
-
-<pre> ``` . ├── bin/ │ └── caching-proxy # CLI entry point ├── cache-handler.js # Cache management ├── server.js # Express proxy server ├── data/ │ └── cached-requests.json # Cache storage ├── package.json └── README.md ``` </pre>
 
 ## Installation
 
